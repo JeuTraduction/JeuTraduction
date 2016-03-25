@@ -1,3 +1,72 @@
-h1 {
+.button {
+  border: none;
+  color: white;
+  padding: 11px 26px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 28px;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+/*Gray Button*/
+.grayButton {
+  background-color: gray;
+  border: none;
+  color: white;
+  padding: 11px 26px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 28px;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.grayButton:hover {
+  background-color: lightgray;
+}
+/* Green Button*/
+.greenButton {
+  background-color: limegreen;
+  border: none;
+  color: white;
+  padding: 11px 26px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 28px;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.greenButton:hover {
+  background-color: lightgreen;
+}
+/* Red Button*/
+.redButton {
   background-color: red;
+  border: none;
+  color: white;
+  padding: 11px 26px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 28px;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.redButton:hover {
+  background-color: lightcoral;
+}
+#instructionsDiv {
+  text-align: center;
+}
+body {
+  align-content: center;
+}
+h1 {
+  text-align: center;
 }
