@@ -7,18 +7,48 @@
     <script src="js/traduction.js"></script>
 </head>
 <body>
-    <h1>Jeu de Traduction</h1>
-    <div id="instructionsDiv">
-        <p>
-            <br>
-            Essayer de trouver la traduction anglaise du mot en question.<br>
-            Vous avez 10 points, essayer d'arriver à 20 points pour gagner.
-        </p>
-        <button class="grayButton" onclick="startGame();">Commencer</button>
-    </div>
-    <div id="gameDiv">
+<div class="clear"></div>
+<h1>Jeu de Traduction</h1>
 
+<div id="instructionsDiv" >
+    <p>
+        Essayer de trouver la traduction anglaise du mot en question.<br>
+        Vous avez 10 points, essayer d'arriver à 20 points pour gagner.
+    </p>
+    <div class="clear"></div>
+    <button class="greenButton" onclick="startGame();">Commencer</button>
+</div>
 
+<div id="gameDiv" class="hidden">
+    <h2 id="word"></h2>
+    <p> <span id="lengthOfTraduction"></span>  Lettres</p>
+    <p>Score  :  <span id="score"></span></p>
+    <div id="responseDiv">
+        <input id="traduction" type="text" onkeyup="traductionChange();" >
+        <div class="clear"></div>
+        <button class="greenButton" onclick="validate();">Valider</button>
     </div>
+    <div id="correcteResponseDiv" class="hidden">
+        <p>la bonne réponse est : <b id="correcteResponse"></b> </p>
+        <div class="clear"></div>
+        <button class="redButton" onclick="showResponseDiv();">Continuer</button>
+    </div>
+
+</div>
+
+<div id="loseDiv" class="hidden">
+    <div class="clear"></div>
+    <h2>Vous avez Perdu :( </h2>
+    <div class="clear"></div>
+    <button class="redButton" onclick="startGame();">Recommencer</button>
+</div>
+
+<div id="winDiv" class="hidden">
+    <div class="clear"></div>
+    <h2>id=Vous avez Gagner :) </h2>
+    <div class="clear"></div>
+    <button class="greenButton" onclick="startGame();">Recommencer</button>
+</div>
+
 </body>
 </html>

@@ -64,9 +64,25 @@
 #instructionsDiv {
   text-align: center;
 }
+#gameDiv {
+  text-align: center;
+}
+#winDiv {
+  text-align: center;
+}
+#loseDiv {
+  text-align: center;
+}
 body {
   align-content: center;
 }
 h1 {
   text-align: center;
+}
+.hidden {
+  display: none;
+}
+.clear {
+  clear: both;
+  height: 20px;
 }
