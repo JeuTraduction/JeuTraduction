@@ -7,7 +7,8 @@ var baseUrl = "https://translate.googleapis.com/translate_a/single?client=gtx&sl
 
 var word, traduction;
 var score;
-var win = false;
+var win = false
+    ,winScore = 20;
 var xmlhttp;
 
 var instructionsDiv
@@ -158,7 +159,7 @@ function showCorrecteResponse() {
 }
 
 function testFin() {
-    if (score >= 20) {
+    if (score >= winScore) {
         win = true;
         return true;
     }
